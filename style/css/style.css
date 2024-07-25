@@ -1,0 +1,31 @@
+@font-face {
+  font-family: Gelion-Medium;
+  src: url("../../fonts/Gelion-Medium.ttf"); }
+@font-face {
+  font-family: Gelion-Regular;
+  src: url("../../fonts/Gelion-Regular.ttf"); }
+@font-face {
+  font-family: RedHatDisplay-Bold;
+  src: url("../../fonts/RedHatDisplay-Bold.ttf"); }
+* {
+  margin: 0;
+  padding: 0; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+html {
+  font-size: 16px; }
+
+body {
+  font-family: Gelion-Medium; }
+
+header {
+  background-color: #fff8f8; }
+
+.navbar .navbar-nav {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
