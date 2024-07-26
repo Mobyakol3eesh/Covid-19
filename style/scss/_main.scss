@@ -1,7 +1,69 @@
+.navbar {
+    .navbar-brand {
+        img {
+            margin-inline-end: $margin-12;
+        }
+        font-size: 1.1875rem;
+        font-family: RedHatDisplay-Bold;
+        color: $seconday-color;
+    }
+    .nav {
+        padding-block: $padding-20;
+        align-items: center;
+        flex-wrap: nowrap;
+        .nav-item {
+            .nav-link {
+                color: $seconday-color;
+                font-family: Gelion-Regular;
+                &:hover {
+                    color: $primary-color;
+                    position: relative;
+                    &::after {
+                        content: url("../../images/Ellipse-overview.svg");
+                        position: absolute;
+                        display: block;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+            }
 
+            .active {
+                color: $primary-color;
+                position: relative;
+                &::after {
+                    content: url("../../images/Ellipse-overview.svg");
+                    position: absolute;
+                    display: block;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+            &:last-child {
+                margin-inline-start: $margin-16;
+            }
+        }
+    }
+}
 
-
-
-
-
-
+.container-fluid {
+    max-width: 1247.857px;
+    margin-inline-end: 0;
+    min-width: auto;
+    .row {
+        align-items: center;
+    }
+}
+.hero {
+    .col-text{
+        h4{
+            font-size: 2rem;
+        }
+        h2{
+            font-size: 3.25rem;
+        }
+    }
+    .col {
+        padding-inline-end: 0;
+    }
+}

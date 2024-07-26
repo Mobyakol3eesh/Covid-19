@@ -1,0 +1,15 @@
+
+
+.btn-secondary {
+    background-color: transparent;
+    color: $btn-secondary-text;
+    border-color: rgba(251, 76, 71, 1);
+    border-radius: $radius-46;
+    padding-block: $padding-12;
+    width: 154px;
+    border-width: 2px;
+    &:hover {
+        background-color: $btn-secondary-border;
+        border-color: $btn-secondary-border;
+    }
+}

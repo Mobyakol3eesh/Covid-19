@@ -22,10 +22,80 @@ body {
   font-family: Gelion-Medium; }
 
 header {
-  background-color: #fff8f8; }
+  background: -webkit-gradient(linear, left bottom, left top, from(#FFFFFF00), color-stop(100%, #FFF8F8), to(#B57474));
+  background: linear-gradient(-360deg, #FFFFFF00 0%, #FFF8F8 100%, #B57474 100%); }
 
-.navbar .navbar-nav {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row; }
+.btn-secondary {
+  background-color: transparent;
+  color: #ff383d;
+  border-color: #fb4c47;
+  border-radius: 2.875rem;
+  padding-block: 0.75rem;
+  width: 154px;
+  border-width: 2px; }
+  .btn-secondary:hover {
+    background-color: #fb4c47;
+    border-color: #fb4c47; }
+
+.navbar .navbar-brand {
+  font-size: 1.1875rem;
+  font-family: RedHatDisplay-Bold;
+  color: #035755; }
+  .navbar .navbar-brand img {
+    -webkit-margin-end: 0.75rem;
+       -moz-margin-end: 0.75rem;
+            margin-inline-end: 0.75rem; }
+.navbar .nav {
+  padding-block: 1.25rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
+  .navbar .nav .nav-item .nav-link {
+    color: #035755;
+    font-family: Gelion-Regular; }
+    .navbar .nav .nav-item .nav-link:hover {
+      color: #fa5652;
+      position: relative; }
+      .navbar .nav .nav-item .nav-link:hover::after {
+        content: url("../../images/Ellipse-overview.svg");
+        position: absolute;
+        display: block;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%); }
+  .navbar .nav .nav-item .active {
+    color: #fa5652;
+    position: relative; }
+    .navbar .nav .nav-item .active::after {
+      content: url("../../images/Ellipse-overview.svg");
+      position: absolute;
+      display: block;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); }
+  .navbar .nav .nav-item:last-child {
+    -webkit-margin-start: 1rem;
+       -moz-margin-start: 1rem;
+            margin-inline-start: 1rem; }
+
+.container-fluid {
+  max-width: 1247.857px;
+  -webkit-margin-end: 0;
+     -moz-margin-end: 0;
+          margin-inline-end: 0;
+  min-width: auto; }
+  .container-fluid .row {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+.hero .col-text h4 {
+  font-size: 2rem; }
+.hero .col-text h2 {
+  font-size: 3.25rem; }
+.hero .col {
+  -webkit-padding-end: 0;
+     -moz-padding-end: 0;
+          padding-inline-end: 0; }
