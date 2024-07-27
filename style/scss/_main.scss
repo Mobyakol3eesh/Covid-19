@@ -132,14 +132,129 @@
     }
 }
 .contagion {
+    background-image: url("../../images/contagion-bg-image.svg");
+    background-repeat: no-repeat;
+    background-position: left 1% bottom;
+    margin-bottom: $margin-16;
     .container-fluid {
-        .col-header{
-            
+        width: 83.75%;
+        .card-group {
+            justify-content: center;
+            .card {
+                img {
+                    max-height: 249px;
+                }
+                h3 {
+                    font-size: $font-36;
+                    color: $seconday-color;
+                    margin-bottom: $margin-16;
+                }
+                p {
+                    font-size: $font-18;
+                    color: $teritary-color;
+                    line-height: 33.3px;
+                }
+            }
+            .row {
+                .col-12 {
+                    .card {
+                        border-radius: 10px;
+                        border-color: transparent;
+                        box-shadow: 0px 35px 87px 0px rgba(0, 0, 0, 0.11);
+                        .card-body {
+                            padding-block: $padding-64;
+                            img {
+                                margin-bottom: $margin-50;
+                            }
+                        }
+                    }
+                    &:first-child {
+                        .card {
+                            border-bottom: solid 6px $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+        .container-header {
+            h4 {
+                font-size: 29px;
+                font-family: $font-Bold;
+                color: $primary-color;
+                line-height: 35.96px;
+            }
+            h2 {
+                font-size: 50px;
+                font-family: $font-Bold;
+                color: $seconday-color;
+                line-height: 59.5px;
+                margin-bottom: $margin-32;
+            }
+
+            p {
+                font-size: $font-18;
+                color: $teritary-color;
+                font-family: $font-Regular;
+                line-height: 38.7px;
+                margin-bottom: $margin-40;
+                text-align: center;
+                max-width: 570px;
+                margin-inline: auto;
+            }
+            margin-bottom: 5rem;
         }
     }
 }
+.symptomps {
+    position: relative;
+    background-image: url("../../images/symtomps-bg-left.svg");
+    background-repeat: no-repeat;
+    background-position: left 64px bottom 20%;
+    margin-bottom: 15rem;
+    
+    .container-header {
+        h4{
+            font-size: 29px;
+                font-family: $font-Bold;
+                color: $primary-color;
+                line-height: 35.96px;
+        }
+        h2 {
+            font-size: 50px;
+            font-family: $font-Bold;
+            color: $seconday-color;
+            line-height: 59.5px;
+            margin-bottom: $margin-32;
+        }
+        p {
+            font-size: $font-18;
+            color: $teritary-color;
+            font-family: $font-Regular;
+            line-height: 38.7px;
+            margin-bottom: $margin-40;
+            text-align: center;
+            max-width: 716px;
+            margin-inline: auto;
+        }
 
-@media (max-width: 991px) {
+    }
+    .bg-img {
+        position: absolute;
+        right: 32px;
+        bottom: 0;
+        z-index: -1;
+    }
+}
+.bg-linear-grad {
+    background: linear-gradient(
+        -180deg,
+        white,
+        #fff8f8 100%,
+        #ffffff00 0%,
+        #b57474 100%
+    );
+}
+@media (max-width: 992px) {
     .navbar {
         .container-fluid {
             width: 100%;
