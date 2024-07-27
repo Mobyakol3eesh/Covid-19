@@ -294,7 +294,7 @@ header {
   z-index: 0;
   background-image: url("../../images/what-should-do-tl.svg");
   background-repeat: no-repeat;
-  background-position: top 25% left;
+  background-position: top 22% left;
   position: relative; }
   .what-should-do .container-fluid {
     width: 83.75%; }
@@ -342,7 +342,8 @@ header {
           font-size: 1.125rem;
           grid-column: 2 / span 3;
           color: #4b4f51;
-          line-height: 39.78px; }
+          line-height: 39.78px;
+          max-width: 532px; }
         .what-should-do .container-fluid .row .col-text .image-four {
           width: 75px;
           height: 75px;
@@ -351,7 +352,7 @@ header {
           background-color: rgba(250, 86, 82, 0.15); }
   .what-should-do .bg-red {
     position: absolute;
-    bottom: 8%;
+    bottom: 7.5%;
     right: 0;
     z-index: -1; }
   .what-should-do .bg-green {
