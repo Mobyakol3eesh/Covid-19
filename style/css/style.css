@@ -287,61 +287,78 @@ header {
 
 .bg-linear-grad {
   background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(100%, #fff8f8), color-stop(0%, #ffffff00), to(#b57474));
-  background: linear-gradient(-180deg, white, #fff8f8 100%, #ffffff00 0%, #b57474 100%); }
+  background: linear-gradient(-180deg, white, #fff8f8 100%, #ffffff00 0%, #b57474 100%);
+  z-index: -2; }
 
-.what-should-do .container-fluid {
-  width: 83.75%; }
-  .what-should-do .container-fluid .container-header {
-    margin-bottom: 2rem; }
-    .what-should-do .container-fluid .container-header h4 {
-      font-size: 29px;
-      font-family: RedHatDisplay-Bold;
-      color: #fa5652;
-      line-height: 35.96px; }
-    .what-should-do .container-fluid .container-header h2 {
-      font-size: 50px;
-      font-family: RedHatDisplay-Bold;
-      color: #035755;
-      line-height: 59.5px;
+.what-should-do {
+  z-index: 0;
+  background-image: url("../../images/what-should-do-tl.svg");
+  background-repeat: no-repeat;
+  background-position: top 25% left;
+  position: relative; }
+  .what-should-do .container-fluid {
+    width: 83.75%; }
+    .what-should-do .container-fluid .container-header {
       margin-bottom: 2rem; }
-    .what-should-do .container-fluid .container-header p {
-      font-size: 1.125rem;
-      color: #4b4f51;
-      font-family: Gelion-Regular;
-      line-height: 38.7px;
-      margin-bottom: 2.5rem;
-      text-align: center;
-      max-width: 650px;
-      margin-inline: auto; }
-  .what-should-do .container-fluid .row {
-    margin-bottom: 5rem; }
-    .what-should-do .container-fluid .row .col-text {
-      display: grid;
-      grid-template-rows: auto auto auto;
-      grid-template-columns: auto auto;
-      -webkit-column-gap: 40px;
-              column-gap: 40px;
-      row-gap: 1rem; }
-      .what-should-do .container-fluid .row .col-text img {
-        min-width: calc(75px * 0.75); }
-      .what-should-do .container-fluid .row .col-text h2 {
+      .what-should-do .container-fluid .container-header h4 {
+        font-size: 29px;
+        font-family: RedHatDisplay-Bold;
+        color: #fa5652;
+        line-height: 35.96px; }
+      .what-should-do .container-fluid .container-header h2 {
+        font-size: 50px;
+        font-family: RedHatDisplay-Bold;
         color: #035755;
-        font-size: 47px;
-        -ms-flex-item-align: center;
-            align-self: center;
-        grid-column: 2 / span 3;
-        margin-bottom: 0; }
-      .what-should-do .container-fluid .row .col-text p {
+        line-height: 59.5px;
+        margin-bottom: 2rem; }
+      .what-should-do .container-fluid .container-header p {
         font-size: 1.125rem;
-        grid-column: 2 / span 3;
         color: #4b4f51;
-        line-height: 39.78px; }
-      .what-should-do .container-fluid .row .col-text .image-four {
-        width: 75px;
-        height: 75px;
-        border-radius: 50%;
-        padding-inline: 0.75rem;
-        background-color: rgba(250, 86, 82, 0.15); }
+        font-family: Gelion-Regular;
+        line-height: 38.7px;
+        margin-bottom: 2.5rem;
+        text-align: center;
+        max-width: 650px;
+        margin-inline: auto; }
+    .what-should-do .container-fluid .row {
+      margin-bottom: 5rem; }
+      .what-should-do .container-fluid .row .col-text {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto auto;
+        -webkit-column-gap: 40px;
+                column-gap: 40px;
+        row-gap: 1rem; }
+        .what-should-do .container-fluid .row .col-text img {
+          min-width: calc(75px * 0.75); }
+        .what-should-do .container-fluid .row .col-text h2 {
+          color: #035755;
+          font-size: 47px;
+          -ms-flex-item-align: center;
+              align-self: center;
+          grid-column: 2 / span 3;
+          margin-bottom: 0; }
+        .what-should-do .container-fluid .row .col-text p {
+          font-size: 1.125rem;
+          grid-column: 2 / span 3;
+          color: #4b4f51;
+          line-height: 39.78px; }
+        .what-should-do .container-fluid .row .col-text .image-four {
+          width: 75px;
+          height: 75px;
+          border-radius: 50%;
+          padding-inline: 0.75rem;
+          background-color: rgba(250, 86, 82, 0.15); }
+  .what-should-do .bg-red {
+    position: absolute;
+    bottom: 8%;
+    right: 0;
+    z-index: -1; }
+  .what-should-do .bg-green {
+    position: absolute;
+    bottom: 20%;
+    right: 2%;
+    z-index: -1; }
 
 @media (max-width: 992px) {
   .navbar .container-fluid {
