@@ -1,69 +1,177 @@
 .navbar {
-    .navbar-brand {
-        img {
-            margin-inline-end: $margin-12;
-        }
-        font-size: 1.1875rem;
-        font-family: RedHatDisplay-Bold;
-        color: $seconday-color;
-    }
-    .nav {
-        padding-block: $padding-20;
+    .container-fluid {
+        width: 83.75%;
         align-items: center;
-        flex-wrap: nowrap;
-        .nav-item {
-            .nav-link {
-                color: $seconday-color;
-                font-family: Gelion-Regular;
-                &:hover {
-                    color: $primary-color;
-                    position: relative;
-                    &::after {
-                        content: url("../../images/Ellipse-overview.svg");
-                        position: absolute;
-                        display: block;
-                        left: 50%;
-                        transform: translateX(-50%);
+
+        .navbar-brand {
+            img {
+                margin-inline-end: $margin-12;
+            }
+            font-size: 1.1875rem;
+            font-family: RedHatDisplay-Bold;
+            color: $seconday-color;
+        }
+        .navbar-collapse {
+            justify-content: end;
+            .nav {
+                padding-block: $padding-20 $padding-32;
+                align-items: center;
+                justify-content: end;
+                flex-wrap: nowrap;
+                .nav-item {
+                    .nav-link {
+                        font-size: $font-18;
+                        color: $seconday-color;
+                        font-family: Gelion-Regular;
+                        &:hover {
+                            color: $primary-color;
+                            position: relative;
+                            &::after {
+                                content: url("../../images/Ellipse-overview.svg");
+                                position: absolute;
+                                display: block;
+                                left: 50%;
+                                transform: translateX(-50%);
+                            }
+                        }
+                    }
+
+                    .active {
+                        color: $primary-color;
+                        position: relative;
+                        &::after {
+                            content: url("../../images/Ellipse-overview.svg");
+                            position: absolute;
+                            display: block;
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+                    }
+                    &:last-child {
+                        margin-inline-start: $margin-16;
                     }
                 }
             }
+        }
+    }
+}
 
-            .active {
+.hero {
+    .container-fluid {
+        width: 92%;
+        margin-inline-end: 0;
+
+        .col-text {
+            h4 {
+                font-size: $font-32;
+                font-family: $font-Bold;
                 color: $primary-color;
-                position: relative;
-                &::after {
-                    content: url("../../images/Ellipse-overview.svg");
-                    position: absolute;
-                    display: block;
-                    left: 50%;
-                    transform: translateX(-50%);
+                line-height: 39.04px;
+            }
+            h2 {
+                font-size: $font-52;
+                font-family: $font-Bold;
+                color: $seconday-color;
+                line-height: 72.28px;
+                margin-bottom: $margin-32;
+            }
+
+            p {
+                font-size: $font-24;
+                color: $teritary-color;
+                font-family: $font-Regular;
+                line-height: 45.6px;
+                margin-bottom: $margin-40;
+            }
+        }
+        .col-lg-7 {
+            padding: inherit;
+        }
+        .col-lg-5 {
+            align-self: flex-end;
+            margin-bottom: $margin-64;
+        }
+    }
+}
+.about-us {
+    position: relative;
+    padding-bottom: 5rem;
+    background-image: url("../../images/about-us-bg-big.svg");
+    background-position: bottom 64px right;
+    background-repeat: no-repeat;
+    .container-fluid {
+        .col-text {
+            h4 {
+                font-size: 29px;
+                font-family: $font-Bold;
+                color: $primary-color;
+                line-height: 35.96px;
+            }
+            h2 {
+                font-size: 50px;
+                font-family: $font-Bold;
+                color: $seconday-color;
+                line-height: 59.5px;
+                margin-bottom: $margin-32;
+            }
+
+            p {
+                font-size: 20px;
+                color: $teritary-color;
+                font-family: $font-Regular;
+                line-height: 43px;
+                margin-bottom: $margin-40;
+            }
+        }
+    }
+    .bg-img {
+        position: absolute;
+        right: 48px;
+        transform: rotate(35.87deg);
+        z-index: -1;
+    }
+}
+.contagion {
+    .container-fluid {
+        .col-header{
+            
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar {
+        .container-fluid {
+            width: 100%;
+            .navbar-collapse {
+                align-items: center;
+                .nav {
+                    flex-direction: column;
+                    .nav-item {
+                        display: block;
+                        margin-bottom: $margin-16;
+                        &:last-child {
+                            margin-inline: 0;
+                        }
+                    }
                 }
             }
-            &:last-child {
-                margin-inline-start: $margin-16;
+        }
+    }
+
+    .hero {
+        .container-fluid {
+            width: 100%;
+            .row {
+                align-items: center;
+            }
+
+            .col-text {
+                padding-right: calc(var(--bs-gutter-x) * 0.5);
+                .btn {
+                    margin-inline: auto;
+                }
             }
         }
-    }
-}
-
-.container-fluid {
-    max-width: 1247.857px;
-    margin-inline-end: 0;
-    min-width: auto;
-    .row {
-        align-items: center;
-    }
-}
-.hero {
-    .col-text{
-        h4{
-            font-size: 2rem;
-        }
-        h2{
-            font-size: 3.25rem;
-        }
-    }
-    .col {
-        padding-inline-end: 0;
     }
 }

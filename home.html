@@ -9,35 +9,53 @@
     </head>
     <body>
         <header>
-            <nav class="navbar">
-                <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
                     <a class="navbar-brand">
                         <img src="images/logo.svg" />
                         COVID-19
                     </a>
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Overview</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contagion</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Symtomps</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Prevention</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="btn btn-secondary" href="#">Contact</a>
-                        </li>
-                    </ul>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class="collapse navbar-collapse"
+                        id="navbarSupportedContent"
+                    >
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Overview</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contagion</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Symtomps</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Prevention</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-secondary" href="#"
+                                    >Contact</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
             <div class="hero">
                 <div class="container-fluid">
-                    <div class="row row-cols-1 row-cols-lg-2">
-                        <div class="col col-text">
+                    <div class="row row-cols-1">
+                        <div class="col-lg-5 col-text">
                             <h4>COVID-19 Alert</h4>
                             <h2>
                                 Stay at Home quarantine To stop Corona virus
@@ -47,22 +65,22 @@
                                 treat coronavirus disease (COVID-19). People may
                                 need supportive care to .
                             </p>
-                            <a class="btn">Let Us Help</a>
+                            <a class="btn btn-primary">Let Us Help</a>
                         </div>
-                        <div class="col">
-                            <img src="images/Illustration1.png" />
+                        <div class="col-lg-7">
+                            <img src="images/Illustration1-scaled.png" />
                         </div>
                     </div>
                 </div>
             </div>
         </header>
         <div class="about-us">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
+            <div class="container-fluid">
+                <div class="row justify-content-between align-items-center gx-md-3">
+                    <div class="col-5 col-md-6">
                         <img src="images/Illustration2.png" />
                     </div>
-                    <div class="col">
+                    <div class="col-7 col-md-5 col-text me-md-5">
                         <h4>What Is Covid-19</h4>
                         <h2>Coronavirus</h2>
                         <p>
@@ -74,13 +92,14 @@
                             Johns Hopkins Office of Critical Event Preparedness
                             and Response
                         </p>
-                        <a class="btn">Learn More</a>
+                        <a class="btn btn-tertiary">Learn More</a>
                     </div>
                 </div>
             </div>
+            <img class="bg-img" src="images/about-us-bg-small.svg">
         </div>
         <div class="contagion">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="container-header text-center">
                     <h4>Covid-19</h4>
                     <h2>Contagion</h2>
@@ -297,7 +316,7 @@
                 2020 @ All rights reserved by pixelspark.co
             </p>
         </footer>
-        <script href="vendor/bootstrap/js/popper.min.js"></script>
-        <script href="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="vendor/bootstrap/js/popper.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
