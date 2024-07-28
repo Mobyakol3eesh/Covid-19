@@ -254,10 +254,20 @@
         #ffffff00 0%,
         #b57474 100%
     );
-    z-index: -2;
+    position: relative;
+    z-index: 0;
+    .bg-img-top {
+        position: absolute;
+        right: 5%;
+        bottom: 13%;
+    }
+    .bg-img {
+        position: absolute;
+        right: 0;
+        bottom: 3%;
+    }
 }
 .what-should-do {
-    z-index: 0;
     background-image: url("../../images/what-should-do-tl.svg");
     background-repeat: no-repeat;
     background-position: top 22% left;
@@ -339,7 +349,7 @@
     }
 }
 .subscribe {
-    margin-bottom: 10rem;
+    padding-bottom: 10rem;
     h2 {
         margin-inline: auto;
         font-size: $font-64;
@@ -406,26 +416,27 @@
     }
 }
 .foot {
-    padding-block: $padding-64 $padding-16;
-    width: 83.75%;
-    align-items: center;
-    .navbar {
-        // flex-wrap: nowrap;
-        .nav-pages {
-            .nav-item {
-                margin-inline: $margin-16;
-                .nav-link {
-                    font-size: 1.4375rem;
-                    color: rgba(0, 64, 46, 1);
-                    font-family: $font-Regular;
+    .container-fluid {
+        padding-block: $padding-64 $padding-16;
+        width: 83.75%;
+        align-items: center;
+        .navbar {
+            .nav-pages {
+                .nav-item {
+                    margin-inline: $margin-16;
+                    .nav-link {
+                        font-size: 1.4375rem;
+                        color: rgba(0, 64, 46, 1);
+                        font-family: $font-Regular;
+                    }
                 }
             }
         }
-    }
-    p {
-        font-size: 23px;
-        color: rgba(65, 94, 86, 1);
-        font-family: $font-Regular;
+        p {
+            font-size: 23px;
+            color: rgba(65, 94, 86, 1);
+            font-family: $font-Regular;
+        }
     }
 }
 
@@ -465,18 +476,75 @@
         }
     }
 }
-@media (max-width:1229px){
-    .foot{
-        width: 100%;
-        .navbar{
-            flex-direction: column;
-            .nav-pages {
-                .nav-item 
-                {
-                    .nav-link {
-                    font-size: $font-12;
+@media (max-width: 1245px) {
+    .foot {
+        .container-fluid {
+            width: 100%;
+            .navbar {
+                flex-direction: column;
+            }
+        }
+    }
+}
+@media (max-width: 670px) {
+    .foot {
+        .container-fluid {
+            .navbar {
+                .nav-pages {
+                    .nav-item {
+                        .nav-link {
+                            font-size: $font-16;
+                        }
                     }
                 }
+            }
+            p {
+                font-size: $font-14;
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .subscribe {
+        .btn-primary {
+            width: 150px;
+        }
+    }
+}
+@media (max-width: 550px) {
+    .about-us {
+        .container-fluid {
+            .col-text {
+                h4 {
+                    font-size: $font-18;
+                    font-family: $font-Bold;
+                    line-height: $font-28;
+                }
+                h2 {
+                    font-size: $font-24;
+                    line-height: $font-28;
+                }
+
+                p {
+                    font-size: $font-14;
+                    line-height: $font-24;
+                }
+            }
+        }
+    }
+    .foot {
+        .container-fluid {
+            .navbar {
+                .nav-pages {
+                    .nav-item {
+                        .nav-link {
+                            font-size: $font-12;
+                        }
+                    }
+                }
+            }
+            p {
+                font-size: $font-10;
             }
         }
     }
